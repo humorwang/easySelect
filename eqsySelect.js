@@ -82,7 +82,7 @@
                 }
 
                 $element.one('_load_options', function () {
-                    var options_data = options.data[key]['list']
+                    var options_data = options.data[key]
                     if (isSelect&&options_data){
                         $element.empty();
                         var option = []

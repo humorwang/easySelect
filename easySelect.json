@@ -1,9 +1,6 @@
 {
-    "openType": {
-        "desc": "开放类型1:对外开放 2:专用站点",
-        "list": [
-          {"code": "1","value": "对外开放"},
-          {"code": "2","value": "专用站点"}
-        ]
-    }
+    "openType": [
+      {"code": 1,"value": "对外开放"},
+      {"code": 2,"value": "专用站点"}
+    ]
 }
