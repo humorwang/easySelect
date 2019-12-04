@@ -22,6 +22,7 @@ An jQuery  plugin for easy init select or select option value to input name
 <script>
     $(".easySelect").easySelect({
         url: '/easySelect.json',
+        type: 'GET', //the url request type. default is get
         addEmpty: true //default is false . if you set this value is true. then you can see the html body.
     });
 </script>

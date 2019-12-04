@@ -35,10 +35,10 @@
         })
     }
 
-    function getDataByUrl(url) {
+    function getDataByUrl(url, type) {
         var dataJson;
         $.ajax({
-            type: "GET",
+            type: type == undefined || type == null ? "GET" : type,
             url: url,
             dataType: "json",
             async: false,
@@ -61,7 +61,7 @@
 
                 }else if (k == 'url') {
                     if (options.hasOwnProperty(k)) {
-                        options['data'] = getDataByUrl(options[k])
+                        options['data'] = getDataByUrl(options[k], options['type'])
                     }
                 } else if (defaultOptions.hasOwnProperty(k) && (!options.hasOwnProperty(k) || (typeK != type(defaultOptions[k])))) {
                     options[k] = v
